@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "players";
+    src: url("fonts/players.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e3e3e3;
+    display: flex;
+    font-family: "players";
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-container {
+    width: 935px;
+    height: 935px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Container do Título */
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Parte de cima do Título: FIGHT + OF THE lado a lado */
+.title-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Texto FIGHT */
+.title-fight {
+    color: rgb(160, 44, 44);
+    font-size: 140px;
+    line-height: 1;
+    text-shadow: 5px 5px rgb(75, 33, 33);
+}
+
+/* Texto OF THE */
+.title-of-the {
+    color: rgb(44, 102, 160);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    padding-bottom: 7px;
+    line-height: 0.8;
+    text-shadow: 4px 4px rgb(21, 50, 08);
+}
+
+/* Texto ELEMENTS */
+.title-elements {
+    color: rgb(44, 160, 63);
+    font-size: 110px;
+    text-align: left;
+    line-height: 0.5;
+    padding-left: 1.3px;
+    text-shadow: 5px 6px rgb(45, 80, 22);
+}
+
+/* Section LOGIC */
+.logic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logic h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 49px;
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    padding-top: 13.8px;
+}

@@ -1,86 +1,30 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>Fight of the Elements - Vinni</title>
     </head>
     
     <body>
-        <h1>Welcome to Fight of the Elements!</h1>
-        <p>The options are: 🔥Fire, 💧Water, 🌿Grass</p>
-        <p>🔥Fire > Grass🌿</p>
-        <p>🌿Grass > Water💧</p>
-        <p>💧Water > Fire🔥</p>
-        
-        <br>
-        
-        <p><b>CHOOSE YOUR ELEMENT</b></p>
-        <input type="radio" name="options" value="fire" checked>🔥Fire
-        <input type="radio" name="options" value="water">💧Water
-        <input type="radio" name="options" value="grass">🌿Grass
-        <button type="button" onclick="battle_logic()">BATTLE!</button>
-        <br>
-
-        <br>
-        <p id="cpu_choice_id"></p>
-        <p id="versus_text_id"></p>
-        <br>
-        <p id="results_id"></p>
-
-        <br>
-        <br>
-
-        <p>To play, just click <b>"BATTLE!"</b> with your element of choice.</p>
-
-        <script>
-            const choices = ['Fire🔥', 'Water💧', 'Grass🌿']
-            let element;
-            let results;
-
-            function battle_logic() {
-                let choice = choices[Math.floor(Math.random() * choices.length)];
-
-                let player_choice = document.querySelector('input[name="options"]:checked')
-                if (player_choice.value == 'fire'){
-                    element = "🔥Fire"
-                    if (choice == "Water💧"){
-                        results = "Too bad, you lost!";
-                    }
-                    else if (choice == "Grass🌿"){
-                        results = "Congratulations, you won!";
-                    }
-                    else {
-                        results = "It is a draw!";
-                    }
-                }
-                else if (player_choice.value == 'water'){
-                    element = "💧Water"
-                    if (choice == "Grass🌿"){
-                        results = "Too bad, you lost!";
-                    }
-                    else if (choice == "Fire🔥"){
-                        results = "Congratulations, you won!";
-                    }
-                    else {
-                        results = "It is a draw!";
-                    }
-                }
-                else if (player_choice.value == 'grass'){
-                    element = "🌿Grass"
-                    if (choice == "Fire🔥"){
-                        results = "Too bad, you lost!";
-                    }
-                    else if (choice == "Water💧"){
-                        results = "Congratulations, you won!";
-                    }
-                    else {
-                        results = "It is a draw!";
-                    }
-                }
-
-                document.getElementById("cpu_choice_id").innerText = `CPU chooses: ${choice}`;
-                document.getElementById("versus_text_id").innerText = `It is ${element}  VS  ${choice}`;
-                document.getElementById("results_id").innerText = results;
-            }
-        </script>
+        <main class="main-container">
+            <header class="header">
+                <!-- Box Vermelho: Titulo -->
+                <div class="title-container">
+                    <div class="title-top">
+                        <span class="title-fight">FIGHT</span>
+                        <span class="title-of-the">
+                            <span>OF</span>
+                            <span>THE</span>
+                        </span>
+                    </div>
+                    <span class="title-elements">ELEMENTS</span>
+                </div>
+                <!-- Box Vermelho: Logic -->
+                <section class="logic">
+                    <h2>LOGIC</h2>
+                    <img src="images/logic_elements.png" alt="Image showing which element wins against another">
+                </section>
+            </header>
+        </main>
     </body>
 </html>
