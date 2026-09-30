@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "players";
-    src: url("fonts/players.ttf");
+    font-family: "Players";
+    src: url("fonts/Players.ttf");
 }
 
 * {
@@ -12,7 +12,7 @@
 body {
     background-color: #e3e3e3;
     display: flex;
-    font-family: "players";
+    font-family: "Players";
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -28,26 +28,22 @@ body {
 }
 
 .header {
-    padding-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-/* Container do Título */
 .title-container {
     display: flex;
     flex-direction: column;
 }
 
-/* Parte de cima do Título: FIGHT + OF THE lado a lado */
 .title-top {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-/* Texto FIGHT */
 .title-fight {
     color: rgb(160, 44, 44);
     font-size: 140px;
@@ -55,7 +51,6 @@ body {
     text-shadow: 5px 5px rgb(75, 33, 33);
 }
 
-/* Texto OF THE */
 .title-of-the {
     color: rgb(44, 102, 160);
     display: flex;
@@ -68,7 +63,6 @@ body {
     text-shadow: 4px 4px rgb(21, 50, 08);
 }
 
-/* Texto ELEMENTS */
 .title-elements {
     color: rgb(44, 160, 63);
     font-size: 110px;
@@ -78,7 +72,6 @@ body {
     text-shadow: 5px 6px rgb(45, 80, 22);
 }
 
-/* Section LOGIC */
 .logic {
     display: flex;
     flex-direction: column;
@@ -92,4 +85,47 @@ body {
     letter-spacing: 3px;
     margin-bottom: 5px;
     padding-top: 13.8px;
+}
+
+.choices {
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.choices h2{
+    font-size: 31px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.player-element-container h2{
+    padding-left: 6px;
+}
+
+.player-element-container img {
+    padding-inline-start: 16px;
+}
+
+.cpu-element-container img {
+    padding-left: 57px;
+}
+
+.battle {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.result {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
