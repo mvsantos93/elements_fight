@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: #e3e3e3;
+    background-color: #242424;
     display: flex;
     font-family: "Players";
     justify-content: center;
@@ -19,6 +19,7 @@ body {
 }
 
 .main-container {
+    background-color: #e3e3e3;
     width: 935px;
     height: 935px;
     padding: 20px;
@@ -113,19 +114,39 @@ body {
 }
 
 .battle {
-    height: 220px;
+    height: 170px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
+}
+
+.vs-header {
+    font-size: 30px;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+}
+
+.vs-container{
+    font-size: 40px;
+    letter-spacing: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.vs-container img{
+    padding-inline: 55px;
+    height: 100px;
+    width: auto;
+    
 }
 
 .result {
-    height: 60px;
+    height: 70px;
+    font-size: 27px;
+    text-align: center;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    margin-bottom: 30px;
 }
